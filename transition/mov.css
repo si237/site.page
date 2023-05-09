@@ -1,0 +1,63 @@
+section, footer{
+    display: block;
+}
+main {
+    position: relative;
+    height: 500px;
+    width: 760px;
+    margin: 10px auto;
+    box-shadow: 0 0 10 #999999;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid #000;
+}
+#janela1, #janela2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 130px;
+}
+#janela1 {
+    left: 10px;
+    background-color: rgb(0, 102, 204);
+    cursor: pointer;
+}
+#janela2{
+    left: 180px;
+    background-color: rgb(255, 0, 0);
+}
+
+#janela1:hover + #janela2{
+    transition: all 0.5s ease-out;
+    transform: rotate(360deg);
+    left: 580px;
+}
+.janela{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(24, 23, 23);
+}
+.janela:hover{
+    transition: all 0.5 ease-out;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(114, 106, 106);
+}
+.btn{
+    margin-left: 500px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: rgb(5, 5, 5);
+}
+
+
+
+.btn:hover{
+    transition: all 0.5 ease-out;
+    transform:scale(1.2) ;
+    background-color: rgb(255, 0, 0);
+}
+
+
+
